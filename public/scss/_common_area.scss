@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+main {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  color: royalblue;
+  background-color: #222830;
+  counter-reset: line;
+
+  app-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  app-line::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    text-align: right;
+    color: grey;
+    min-width: 26px;
+  }
+  .delimiter {
+    color: #dcd8d7;
+  }
+
+  .label {
+    color: #c04143;
+    &::after {
+      content: ":";
+      color: #dcd8d7;
+      margin-right: 0.7rem;
+    }
+  }
+
+  .value {
+    color: #cbe0e8;
+    &::after {
+      color: #dcd8d7;
+    }
+  }
+
+  .start-section::after {
+    content: "{";
+    color: #dcd8d7;
+    margin-left: 0.7rem;
+  }
+
+  .start-section.label::after {
+    content: ": {" !important;
+    color: #dcd8d7 !important;
+    margin-left: 0.1rem !important;
+  }
+
+  .end-section::before {
+    content: "}";
+    color: #dcd8d7;
+    margin-right: 0.7rem;
+  }
+
+  .start-array::after {
+    content: "[";
+    color: #dcd8d7;
+    margin-left: 0.7rem;
+  }
+
+  .end-array::before {
+    content: "]";
+    color: #dcd8d7;
+    margin-right: 0.7rem;
+  }
+
+  .value-gap {
+    margin-left: 2rem;
+  }
+
+  a.value {
+    text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+  }
+}

@@ -1,0 +1,21 @@
+header {
+	background-color: #171b21;
+	width: 100%;
+  
+	div {
+	  color: #dcd8d7;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: fit-content;
+	  gap: 0.5rem;
+	  padding: 0.5rem 1rem;
+	  background-color: #222830;
+	  border-top: 0.15rem solid #5c5fd0;
+	}
+  }
+  
+  svg {
+	padding: 0;
+	margin: 0;
+  }
