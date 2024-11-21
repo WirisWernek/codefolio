@@ -1,1 +1,23 @@
 @import "common_area";
+
+.codeblock{
+	display: flex;
+	width: 90%;
+
+	section{
+		width: 50%;
+		
+		&:last-child{
+			border-left: 3px solid #5c5fd0;
+		}
+	}
+
+	form{
+		padding-left: 1.5rem;
+		.form-label{
+			margin-bottom: 0.2rem !important;
+		}
+	}
+
+
+}

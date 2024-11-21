@@ -1,59 +1,92 @@
 <app-editor-header [languageIcon]="'typescript'" [pageName]="'social.ts'" />
 
 <main class="codeblock">
-	<app-line>
-		<span class="label start-section">.socials</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">youtube</span>
-		<a href="https://www.youtube.com/@wiriswernek" target="_blank" class="value">wiriswernek</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">github</span>
-		<a href="https://github.com/WirisWernek" target="_blank" class="value">wiriswernek</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">instagram</span>
-		<a  href="https://www.instagram.com/wiriswernek/" target="_blank" class="value">wiriswernek</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">twitch</span>
-		<a href="https://www.twitch.tv/lost905" target="_blank" class="value">lost905</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">linkedin</span>
-		<a href="https://www.linkedin.com/in/wiriswernek/" target="_blank" class="value">wiriswernek</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">whatsapp</span>
-		<a target="_blank" class="value">(28) 999801-4672</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">email</span>
-		<a href="mailto:wiriswernek@gmail.com" target="_blank" class="value">teste</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">telefone</span>
-		<a href="tel:55289998014672" target="_blank" class="value">(28) 999801-4672</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">cartao_de_visitas</span>
-		<a  download="cartao-digital-wiriswernek.pdf" href="files/cartao-de-visitas-interativo.pdf" target="_blank" class="value">baixar_cartao</a>
-	</app-line>
-	<app-line>
-		<span class="value-gap label">contato</span>
-		<a href="files/Wiris_Rafael_Januario_Wernek.vcf" target="_blank" class="value">salvar_contato</a>
-		<span class="delimiter">,</span>
-	</app-line>
-	<app-line>
-		<span class="end-section"></span>
-	</app-line>
+	<section>
+		<app-line>
+			<span class="title"># Redes Sociais</span>
+		</app-line>
+
+		<app-line/>
+
+		<app-line>
+			<span class="label start-section">.socials</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">youtube</span>
+			<a href="https://www.youtube.com/@wiriswernek" target="_blank" class="value">&#64;wiriswernek</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">github</span>
+			<a href="https://github.com/WirisWernek" target="_blank" class="value">&#64;wiriswernek</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">instagram</span>
+			<a  href="https://www.instagram.com/wiriswernek/" target="_blank" class="value">&#64;wiriswernek</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">twitch</span>
+			<a href="https://www.twitch.tv/lost905" target="_blank" class="value">&#64;lost905</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">linkedin</span>
+			<a href="https://www.linkedin.com/in/wiriswernek/" target="_blank" class="value">&#64;wiriswernek</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">email</span>
+			<a href="mailto:wiriswernek@gmail.com" target="_blank" class="value">wiriswernek&#64;gmail.com</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">whatsapp</span>
+			<a [href]="whatsapp" target="_blank" class="value">(28) 999801-4672</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">telefone</span>
+			<a href="tel:55289998014672" target="_blank" class="value">(28) 999801-4672</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">cartao_de_visitas</span>
+			<a  download="cartao-digital-wiriswernek.pdf" href="files/cartao-de-visitas-interativo.pdf" target="_blank" class="value">baixar_cartao</a>
+		</app-line>
+		<app-line>
+			<span class="value-gap label">contato</span>
+			<a href="files/Wiris_Rafael_Januario_Wernek.vcf" target="_blank" class="value">salvar_contato</a>
+			<span class="delimiter">,</span>
+		</app-line>
+		<app-line>
+			<span class="end-section"></span>
+		</app-line>
+	</section>
+
+	<section>
+		<form class="row g-3">
+			<span class="title"># Vamos Conversar</span>
+			<div class="col-md-6">
+			  <label for="inputName" class="form-label">Nome</label>
+			  <input type="text" class="form-control" id="inputName">
+			</div>
+			<div class="col-md-6">
+			  <label for="inputEmail" class="form-label">Email</label>
+			  <input type="email" class="form-control" id="inputEmail">
+			</div>
+			<div class="col-12">
+			  <label for="inputSubject" class="form-label">Assunto</label>
+			  <input type="text" class="form-control" id="inputSubject">
+			</div>
+			<div class="col-12">
+			  <label for="inputMessage" class="form-label">Mensagem</label>
+			  <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+			</div>
+			<div class="col-12">
+			  <button type="submit" class="btn btn-primary">Enviar</button>
+			</div>
+		  </form>
+	</section>
 </main>
