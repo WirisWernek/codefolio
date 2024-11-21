@@ -3,8 +3,8 @@
   <div class="card-body d-flex justify-content-center align-items-center flex-column">
     
 	<section class="w-100 d-flex flex-column">
-      <h5 class="card-title">{{ project().title }}</h5>
-      <p class="card-text">{{ project().description }}</p>
+      <h5 class="card-title text-center">{{ project().title }}</h5>
+      <p class="card-text text-center">{{ project().description }}</p>
     </section>
     
 	<section class="w-100 d-flex justify-content-center align-items-center mb-3">
@@ -13,11 +13,19 @@
 		}
 	</section>
 
-    <section
-      class="w-100 row gap-2 d-flex justify-content-center align-items-center"
-    >
-      <a [href]="project().deploy" class="btn btn-primary col">Deploy</a>
-      <a [href]="project().github" class="btn btn-primary col">Github</a>
+    <section class="w-100 row gap-2 d-flex justify-content-center align-items-end">
+	@if (project().deploy.trim() !== '') {
+		<a [href]="project().deploy" class="btn btn-deploy col">
+			<img src="icons/Deploy.svg" alt="">
+			Deploy
+		</a>
+	}
+	@if (project().github.trim() !== '') {
+      	<a [href]="project().github" class="btn btn-github col">
+			<img src="icons/Github.svg" alt="">
+			Github
+		</a>
+	}
     </section>
 	
   </div>

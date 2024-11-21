@@ -1,3 +1,24 @@
 section{
 	gap: 0.6rem;
 }
+
+.card{
+	background-color: #2228303a;
+	color: white;
+	min-height: 32rem;
+}
+
+.btn-deploy{
+	color: white;
+	background-color: #4285F4;
+	&:hover{
+		background-color: #5e8acf;
+	}
+}
+.btn-github{
+	color: white;
+	background-color: #191c20;
+	&:hover{
+		background-color: #1f2429;
+	}
+}
