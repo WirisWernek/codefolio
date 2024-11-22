@@ -6,19 +6,24 @@ section{
 	background-color: #2228303a;
 	color: white;
 	min-height: 32rem;
+	transition: transform 0.3s;
+	&:hover{
+		background-color: #434b553a;
+		transform: scale(1.1);
+	}
 }
 
 .btn-deploy{
 	color: white;
 	background-color: #4285F4;
-	&:hover{
+	&:hover, &:focus{
 		background-color: #5e8acf;
 	}
 }
 .btn-github{
 	color: white;
 	background-color: #191c20;
-	&:hover{
+	&:hover, &:focus{
 		background-color: #1f2429;
 	}
 }
