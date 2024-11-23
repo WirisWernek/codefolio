@@ -1,12 +1,81 @@
-<header>
-	<ul class="nav nav-tabs">
-		<li class="nav-item">
-			<a class="nav-link " aria-current="page" href="#">stack.sql</a>
-		</li>
-	</ul>
-</header>
+<app-editor-header [languageIcon]="'svg'" [pageName]="'stack.svg'" />
 
-<main>
-	<h1>Home</h1>
-	<p>Welcome to the home page!</p>
+<main class="codeblock">
+	<section>
+		<app-line>
+			<span class="title"># Stacks</span>
+		</app-line>
+
+		<app-line/>
+
+		<app-line>
+			<span class="title">## Tecnologias</span>
+		  </app-line>
+		
+		  @for (tech of technologies; track $index) {
+			<app-line>
+				<span class="list-item">- {{ tech }}</span>
+			</app-line>
+		  }
+		
+		  <app-line />
+		
+		  <app-line>
+			<span class="title">## Frameworks</span>
+		  </app-line>
+		
+		  @for (framework of frameworks; track $index) {
+			<app-line>
+				<span class="list-item">- {{ framework }}</span>
+			</app-line>
+		  }
+		
+		  <app-line />
+		
+		  <app-line>
+			<span class="title">## Bancos de Dados</span>
+		  </app-line>
+		
+		  @for (database of databases; track $index) {
+			<app-line>
+				<span class="list-item">- {{ database }}</span>
+			</app-line>
+		  }
+		
+		  <app-line />
+		
+		  <app-line>
+			<span class="title">## Cloud</span>
+		  </app-line>
+		
+		  @for (cloud of clouds; track $index) {
+			<app-line>
+				<span class="list-item">- {{ cloud }}</span>
+			</app-line>
+		  }
+		
+		  <app-line />
+		
+		  <app-line>
+			<span class="title">## Mensageria</span>
+		  </app-line>
+		
+		  @for (messageBroker of messageBrokers; track $index) {
+			<app-line>
+				<span class="list-item">- {{ messageBroker }}</span>
+			</app-line>
+		  }
+		
+		  <app-line />
+		
+		  <app-line>
+			<span class="title">## Ferramentas</span>
+		  </app-line>
+		
+		  @for (tool of tools; track $index) {
+			<app-line>
+				<span class="list-item">- {{ tool }}</span>
+			</app-line>
+		  }
+	</section>
 </main>

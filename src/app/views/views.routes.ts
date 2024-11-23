@@ -21,7 +21,7 @@ export const VIEWS_ROUTES: Routes = [
 		loadComponent: () => import('./social/social.component').then(m => m.SocialComponent)
 	},
 	{
-		path: 'stack',
+		path: 'stacks',
 		loadComponent: () => import('./stacks/stacks.component').then(m => m.StacksComponent)
 	},
 	{

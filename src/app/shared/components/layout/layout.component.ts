@@ -35,9 +35,14 @@ export class LayoutComponent {
 				icon: 'Extension'
 			},
 			{
+				description: 'Stacks',
+				url: 'stacks',
+				icon: 'Folder'
+			},
+			{
 				description: 'Projetos',
 				url: 'projects',
-				icon: 'Desktop'
+				icon: 'Laptop'
 			}
 		]
 	}
