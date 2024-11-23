@@ -2,12 +2,12 @@
   <img [src]="project().thumb" class="card-img-top" alt="..." tabindex="" (click)="showPreview()" (keypress)="showPreview()"/>
   <div class="card-body d-flex justify-content-center align-items-center flex-column">
     
-	<section class="w-100 d-flex flex-column">
+	<section class="w-100 d-flex flex-column mb-3">
       <h5 class="card-title text-center">{{ project().title }}</h5>
       <p class="card-text text-center">{{ project().description }}</p>
     </section>
     
-	<section class="w-100 d-flex justify-content-center align-items-center mb-3">
+	<section class="w-100 d-flex justify-content-center align-items-center mb-3 flex-wrap">
 		@for (tech of project().technologies; track $index) {
 			<span class="badge rounded-pill" [class]="[(tech.toLocaleLowerCase()+'-pill').toString()]">{{tech}}</span>
 		}
