@@ -19,6 +19,7 @@ export class ProjectCardComponent {
     const modalRef = this.modalService.open(PreviewProjectComponent, {
       centered: true,
       size: 'lg',
+      modalDialogClass: 'custom-modal',
     });
     if (modalRef.componentInstance)
       modalRef.componentInstance.img = this.project().thumb;

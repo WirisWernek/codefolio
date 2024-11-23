@@ -1,22 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.cdnfonts.com/css/monaco');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import 'bootstrap/scss/bootstrap';
-@import 'tech_pills';
-@import 'markdown_style';
+@import url("https://fonts.cdnfonts.com/css/monaco");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "bootstrap/scss/bootstrap";
+@import "tech_pills";
+@import "markdown_style";
+@import "custom_modal";
 
 :root {
-	--header-background-color: #222830;
-	--header-text-color: #7B8590;
-	--sidebar-background-color: #222830;
-	--sidebar-icon-color: #45515D;
-	--page-background-color: #222830;
-  }
+  --header-background-color: #222830;
+  --header-text-color: #7b8590;
+  --sidebar-background-color: #222830;
+  --sidebar-icon-color: #45515d;
+  --page-background-color: #222830;
+}
 
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--page-background-color);
-	height: 100%;
-	width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--page-background-color);
+  height: 100%;
+  width: 100%;
 }
