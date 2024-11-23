@@ -32,8 +32,17 @@ main {
     }
   }
 
+  .value-label {
+    color: var(--label-color);
+    &::after {
+      content: ":";
+      color: #dcd8d7;
+      margin-right: 0.7rem;
+    }
+  }
+
   .value {
-    color: #cbe0e8;
+    color: var(--value-color);
     &::after {
       color: #dcd8d7;
     }
@@ -75,8 +84,8 @@ main {
 
   a.value {
     text-decoration: none;
-	&:hover{
-		text-decoration: underline;
-	}
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

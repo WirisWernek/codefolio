@@ -8,7 +8,7 @@
 		width: 50%;
 		
 		&:last-child{
-			border-left: 3px solid #5c5fd0;
+			border-left: 3px solid var(--elements-background-primary);
 		}
 	}
 
@@ -16,6 +16,29 @@
 		padding-left: 1.5rem;
 		.form-label{
 			margin-bottom: 0.2rem !important;
+			color: var(--elements-background-primary-interaction);
+		}
+
+		.form-control, .btn{
+			border-radius: 0;
+		}
+
+		.form-control{
+			background-color: var(--input-background-color);
+			border-color: var(--elements-background-primary);
+			&:focus{
+				border-color: var(--elements-background-primary);
+				box-shadow: 0 0 0 0.15rem var(--elements-background-primary);
+			}
+		}
+
+		.btn{
+			background-color: var(--elements-background-primary);
+			border-color: var(--elements-background-primary);
+			&:hover, &:focus, &:active{
+				background-color: var(--elements-background-primary-interaction);
+				border-color: var(--elements-background-primary-interaction);
+			}
 		}
 	}
 
