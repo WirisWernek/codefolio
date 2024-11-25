@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { Project } from '../../models/project.model';
 import { EditorHeaderComponent } from '../../shared/components/editor-header/editor-header.component';
-import { LineComponent } from '../../shared/components/line/line.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @Component({
   selector: 'app-projetos',
   standalone: true,
-  imports: [EditorHeaderComponent, ProjectCardComponent, LineComponent],
+  imports: [EditorHeaderComponent, ProjectCardComponent],
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.scss',
 })

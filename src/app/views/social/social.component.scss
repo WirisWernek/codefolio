@@ -1,10 +1,11 @@
 .codeblock{
 	display: flex;
+	flex-direction: column;
 	width: 90%;
 
 	section{
 		width: 50%;
-		
+		flex-direction: row;
 		&:last-child{
 			border-left: 3px solid var(--elements-background-primary);
 		}

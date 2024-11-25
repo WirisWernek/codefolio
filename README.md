@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Tipografia
+ - [ ] Definir a escala (padrão do Material)
+ - [ ] Definir a altura de linha( titulo de 1.25x e corpo de 1.5x o tamanho da fonte)
+ - [ ] Alterar botões para texto em maiúsculo
+ - [ ] Limitar o Conteúdo a 80 caracteres

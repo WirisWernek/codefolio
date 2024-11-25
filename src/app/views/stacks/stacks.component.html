@@ -1,20 +1,15 @@
 <app-editor-header [languageIcon]="'svg'" [pageName]="'stack.svg'" />
 
 <main class="codeblock">
+	<h1 class="title"># Stacks</h1>
 	<section>
-		<app-line>
-			<span class="title"># Stacks</span>
-		</app-line>
-
-		<app-line/>
-
 		<app-line>
 			<span class="title">## Tecnologias</span>
 		  </app-line>
 		
 		  @for (tech of technologies; track $index) {
 			<app-line>
-				<span class="list-item">- {{ tech }}</span>
+				<span class="value-gap list-item">- {{ tech }}</span>
 			</app-line>
 		  }
 		
@@ -26,7 +21,7 @@
 		
 		  @for (framework of frameworks; track $index) {
 			<app-line>
-				<span class="list-item">- {{ framework }}</span>
+				<span class="value-gap list-item">- {{ framework }}</span>
 			</app-line>
 		  }
 		
@@ -38,7 +33,7 @@
 		
 		  @for (database of databases; track $index) {
 			<app-line>
-				<span class="list-item">- {{ database }}</span>
+				<span class="value-gap list-item">- {{ database }}</span>
 			</app-line>
 		  }
 		
@@ -50,7 +45,7 @@
 		
 		  @for (cloud of clouds; track $index) {
 			<app-line>
-				<span class="list-item">- {{ cloud }}</span>
+				<span class="value-gap list-item">- {{ cloud }}</span>
 			</app-line>
 		  }
 		
@@ -62,7 +57,7 @@
 		
 		  @for (messageBroker of messageBrokers; track $index) {
 			<app-line>
-				<span class="list-item">- {{ messageBroker }}</span>
+				<span class="value-gap list-item">- {{ messageBroker }}</span>
 			</app-line>
 		  }
 		
@@ -74,7 +69,7 @@
 		
 		  @for (tool of tools; track $index) {
 			<app-line>
-				<span class="list-item">- {{ tool }}</span>
+				<span class="value-gap list-item">- {{ tool }}</span>
 			</app-line>
 		  }
 	</section>
