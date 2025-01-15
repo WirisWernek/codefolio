@@ -1,0 +1,20 @@
+:host{
+	display: flex;
+	width: 100%;
+	max-width: 20rem;
+	height: 11rem;
+}
+
+img{
+	width: 1.4rem;
+	height: 1.4rem;
+	&:last-child{
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+}
+
+.card{
+	width: 100%;
+	height: 100%;
+}

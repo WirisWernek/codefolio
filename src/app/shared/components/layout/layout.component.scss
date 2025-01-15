@@ -28,6 +28,15 @@ header {
       cursor: pointer;
       transition: all 0.3s ease;
     }
+
+	&:first-child{
+		li:last-child {
+			img{
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
   }
 }
 

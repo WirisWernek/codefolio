@@ -36,6 +36,8 @@ $a: 16px;
 p {
   font-size: $p;
   line-height: calc($p * 1.5);
+  margin: 0;
+  padding: 0;
 }
 button {
   font-size: $button;
@@ -49,4 +51,6 @@ span {
 a {
   font-size: $a;
   line-height: calc($a * 1.5);
+  margin: 0;
+  padding: 0;
 }

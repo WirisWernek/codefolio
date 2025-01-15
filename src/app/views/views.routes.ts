@@ -33,6 +33,10 @@ export const VIEWS_ROUTES: Routes = [
 		loadComponent: () => import('./sobre/sobre.component').then(m => m.SobreComponent)
 	},
 	{
+		path: 'github',
+		loadComponent: () => import('./github/github.component').then(m => m.GithubComponent)
+	},
+	{
 		path: '**',
 		pathMatch: 'full',
 		redirectTo: 'home'

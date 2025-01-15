@@ -1,0 +1,14 @@
+<app-editor-header [languageIcon]="'python'" [pageName]="'github.py'" />
+
+<main>
+	<h1 class="title"># Repositórios</h1>
+
+	<section>
+		@for (item of repositories$ | async ; track $index) {
+			<app-repository [repository]="item" />
+		} @empty {
+			<p>Nenhum projeto encontrado</p>
+		}
+	</section>
+</main>
+

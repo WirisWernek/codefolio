@@ -43,6 +43,11 @@ export class LayoutComponent {
 				description: 'Projetos',
 				url: 'projects',
 				icon: 'Laptop'
+			},
+			{
+				description: 'Github',
+				url: 'github',
+				icon: 'Github-Grey'
 			}
 		]
 	}
