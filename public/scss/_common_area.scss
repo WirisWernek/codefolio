@@ -4,6 +4,7 @@ main {
   color: royalblue;
   background-color: #222830;
   counter-reset: line;
+  height: 90%;
 
   app-line {
     display: flex;

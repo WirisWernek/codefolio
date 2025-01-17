@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { EditorHeaderComponent } from '../../shared/components/editor-header/editor-header.component';
 import { LineComponent } from '../../shared/components/line/line.component';
 
@@ -9,9 +9,13 @@ import { LineComponent } from '../../shared/components/line/line.component';
   templateUrl: './social.component.html',
   styleUrl: './social.component.scss',
 })
-export class SocialComponent {
-  whatsapp = this._loadWhatsAppLink();
+export class SocialComponent implements AfterViewInit {
+  whatsapp = '';
 
+  ngAfterViewInit(): void {
+    this.whatsapp = this._loadWhatsAppLink();
+  }
+	
   private _loadWhatsAppLink() {
     if (this._isMobileDevice()) {
       return 'whatsapp://send?phone=+5528999814672&text="Olá, tudo bem?"';

@@ -1,45 +1,68 @@
-.codeblock{
-	display: flex;
-	flex-direction: column;
-	width: 90%;
+.codeblock {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 
-	section{
-		width: 50%;
-		flex-direction: row;
-		&:last-child{
-			border-left: 3px solid var(--elements-background-primary);
-		}
-	}
+  section {
+    width: 50%;
+    flex-direction: row;
+    &:last-child {
+      border-left: 3px solid var(--elements-background-primary);
+    }
+  }
 
-	form{
-		padding-left: 1.5rem;
-		.form-label{
-			margin-bottom: 0.2rem !important;
-			color: var(--elements-background-primary-interaction);
-		}
+  form {
+    padding-left: 1.5rem;
+    .form-label {
+      margin-bottom: 0.2rem !important;
+      color: var(--elements-background-primary-interaction);
+    }
 
-		.form-control, .btn{
-			border-radius: 0;
-		}
+    .form-control,
+    .btn {
+      border-radius: 0;
+    }
 
-		.form-control{
-			background-color: var(--input-background-color);
-			border-color: var(--elements-background-primary);
-			&:focus{
-				border-color: var(--elements-background-primary);
-				box-shadow: 0 0 0 0.15rem var(--elements-background-primary);
-			}
-		}
+    .form-control {
+      background-color: var(--input-background-color);
+      border-color: var(--elements-background-primary);
+      &:focus {
+        border-color: var(--elements-background-primary);
+        box-shadow: 0 0 0 0.15rem var(--elements-background-primary);
+      }
+    }
 
-		.btn{
-			background-color: var(--elements-background-primary);
-			border-color: var(--elements-background-primary);
-			&:hover, &:focus, &:active{
-				background-color: var(--elements-background-primary-interaction);
-				border-color: var(--elements-background-primary-interaction);
-			}
-		}
-	}
+    .btn {
+      background-color: var(--elements-background-primary);
+      border-color: var(--elements-background-primary);
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: var(--elements-background-primary-interaction);
+        border-color: var(--elements-background-primary-interaction);
+      }
+    }
+  }
+}
 
-
+@media (max-width: 768px) {
+  main,
+  .codeblock {
+    width: 100% !important;
+  }
+  main > div {
+    width: 100% !important;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    section {
+      width: 100%;
+      border-left: none;
+      &:last-child {
+        border-left: none;
+        padding: 1rem 1rem 0 0;
+        border-top: 3px solid var(--elements-background-primary);
+      }
+    }
+  }
 }
