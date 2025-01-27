@@ -52,6 +52,7 @@ main {
 	section:last-child {
 		width: 100% !important;
 		flex-direction: column !important;
+		gap: 1.4rem;
 		& > div {
 			width: 100% !important;
 		}
